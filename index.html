@@ -15,42 +15,42 @@
 	<meta name="description" content="Shady Oak Veterinary Clinic serving pets and their owners in South West Minneapolis, Minnetonka, Hopkins, St. Louis Park, Eden Prairie, Wayzata and Edina."> 
 	<meta name="robots" content="index,follow,archive">
 
-									<!-- Reuqired by Myfonts, thanks for messing with my markup guys!!! -->
-									<!--/**
-										 * @license
-										 * MyFonts Webfont Build ID 2733007, 2014-01-25T21:42:08-0500
-										 * 
-										 * The fonts listed in this notice are subject to the End User License
-										 * Agreement(s) entered into by the website owner. All other parties are 
-										 * explicitly restricted from using the Licensed Webfonts(s).
-										 * 
-										 * You may obtain a valid license at the URLs below.
-										 * 
-										 * Webfont: Proxima Nova Thin by Mark Simonson
-										 * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
-										 * 
-										 * Webfont: Proxima Nova A Thin by Mark Simonson
-										 * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-thin/
-										 * 
-										 * Webfont: Proxima Nova S Thin by Mark Simonson
-										 * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin/
-										 * 
-										 * Webfont: Proxima Nova Thin Italic by Mark Simonson
-										 * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin-it/
-										 * 
-										 * Webfont: Proxima Nova S Thin Italic by Mark Simonson
-										 * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin-it/
-										 * 
-										 * Webfont: Proxima Nova A Thin Italic by Mark Simonson
-										 * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-thin-it/
-										 * 
-										 * 
-										 * License: http://www.myfonts.com/viewlicense?type=web&buildid=2733007
-										 * Licensed pageviews: 1,000,000
-										 * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
-										 * 
-										 * © 2014 MyFonts Inc
-									*/-->
+<!-- Reuqired by Myfonts, thanks for messing with my markup guys!!! -->
+<!--/**
+ * @license
+ * MyFonts Webfont Build ID 2733007, 2014-01-25T21:42:08-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Proxima Nova Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
+ * 
+ * Webfont: Proxima Nova A Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-thin/
+ * 
+ * Webfont: Proxima Nova S Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin/
+ * 
+ * Webfont: Proxima Nova Thin Italic by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin-it/
+ * 
+ * Webfont: Proxima Nova S Thin Italic by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin-it/
+ * 
+ * Webfont: Proxima Nova A Thin Italic by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-thin-it/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2733007
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/-->
 
 <!-- Styles -->
 <link rel="stylesheet" type="text/css" href="stylesheets/MyFontsWebfontsKit.css">
@@ -90,7 +90,8 @@
    <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>-->
   	<li class="toggle-topbar calltoaction">
   		<div class=" ProximaNovaA-ThinIt">Call us today!</div>
-	    <div class="phone-number">(952) 938-1926</div>
+	    <div class="phone-number"><a href="tel:+19529381926">(952) 938-1926</a>
+	    </div>
 	  </li>
   </ul>
 
@@ -107,7 +108,7 @@
     <ul class="right">
       <li class="calltoaction ProximaNovaA-ThinIt">
 	      <div class="call-us">Call us today!</div>
-	    	<div class="phone-number">(952) 938-1926</div>
+	    	<div class="tel"><a href="tel:+19529381926">(952) 938-1926</a></div>
     	</li>
     </ul>
   </section>
@@ -124,7 +125,7 @@
 		<div  class="show-for-small-only"><img src="images/hero-small.jpg" class="hero"></div>
 
 		<blockquote class="hero-quote show-for-medium-up">&ldquo;We can judge the heart of a man by his treatment of animals.&rdquo;
-		 <div class="text-right">&mdash;Immanuel Kant</div>
+		<cite class="text-right">&mdash;Immanuel Kant</cite>
 		</blockquote>
 	
 	</div>
@@ -149,13 +150,19 @@
 			</tr>
 		</table>
 
-		<h2>Address and Directions</h2>
-		<p>Shady Oak Veterinary Clinic<br/>
-		10015 Minnetonka Blvd.<br/>
-		Minnetonka, MN 55305<br/>
 
+		<h2>Address and Directions</h2>
+		<address id="address" class="vcard">
+			<strong class="fn">Shady Oak Veterinary Clinic</strong>
+			<p  class="adr">
+			<span class="street-address">10015 Minnetonka Blvd.</span><br>
+			<span class="locality">Minnetonka</span>, <abbr class="region" title="Minneasota">MN</abbr> <span class="postal-code">55305</span><br/>
+			</p>
+		</address>
+		<p>
 		<a target="_blank" class="button" href="https://www.google.com/maps/preview/place/Shady+Oak+Veterinary+Clinic/@44.9441329,-93.404718,16z/data=!4m2!3m1!1s0x0:0x696b91aa765e6599">Get Directions <span class="direct" >&raquo;</span></a>
 		</p>
+		
 
 	</div>
 	
